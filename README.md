@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I wasn't able to complete all the task in time. But I will do an overview and answer the requirements for this code challenge
 
-Things you may want to cover:
+Created a working master and a branch called "devisecancan"
 
-* Ruby version
+The master works as a normal blog with the ability to add post and comments
 
-* System dependencies
+The "devisecancan" branch addressed the functionality of users and the ability to author and co author post but still has bugs to iron out
 
-* Configuration
+##Answers for the requirements
 
-* Database creation
+The way I wanted to go about the users having the ability to co author post was to use cancancan gem. This would allow users(authors) to create a post and have another user edit the post having given them the ability through cancancan
 
-* Database initialization
+The users would be able to comment on post but not edit the comment if they aren't the original commenter.
 
-* How to run the test suite
+I built the tables to reference user to coincide with author
 
-* Services (job queues, cache servers, search engines, etc.)
+To combat bloating in the controller we would use private methods to contain all duplicate code, keeping the controller methods DRY.
 
-* Deployment instructions
 
-* ...
